@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    transition: all ease-out 200ms;
+    /* transition: all ease-out 200ms; */
 }
 
 body {
@@ -81,7 +81,7 @@ main {
 }
 
 .title {
-    padding: 430px 50px 240px;
+    padding: 345px 50px 325px;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(12px);
     position: absolute;
@@ -486,12 +486,20 @@ footer {
 }
 
 #il-residents {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-top: 50px;
     font-size: 24px;
     font-weight: 400;
     font-family: "Noto Sans", sans-serif;
+}
+
+.mid1 {
+    padding-left: 140px;
+}
+
+.mid2 {
+    padding-left: 140px;
 }
 
 #il-residents h2 {
@@ -508,9 +516,10 @@ footer {
 }
 
 #io-residents {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-top: 50px;
+    margin-top: 20px;
     font-size: 24px;
     font-weight: 400;
     font-family: "Noto Sans", sans-serif;
@@ -529,6 +538,54 @@ footer {
     grid-template-columns: 1fr 1fr;
 }
 
+#terminal {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#terminal h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #181b30;
+}
+
+.term {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+    text-align: center;
+}
+
+.term p {
+    width: 90%;
+}
+
+#minors {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#minors h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #181b30;
+}
+
 @media only screen and (min-width: 1920px) {
     .nav {
         font-size: 26px;
@@ -540,7 +597,11 @@ footer {
         margin: auto;
     }
     html {
-        background-color: rgba(128, 128, 128, 0.753);
+        background-color: white;
+    }
+    header {
+        border-left: rgba(243, 240, 240, 0.7) 1px solid;
+        border-right: rgba(243, 240, 240, 0.7) 1px solid;
     }
     .details {
         margin-bottom: 0;
@@ -572,6 +633,12 @@ footer {
     /* about page css*/
     .about-title h1 {
         font-size: 160px;
+    }
+    .mid1 {
+        padding-left: 100px;
+    }
+    .mid2 {
+        padding-left: 100px;
     }
 }
 
@@ -692,6 +759,12 @@ footer {
     #io-residents {
         font-size: 24px;
     }
+    #terminal {
+        font-size: 24px;
+    }
+    #minors {
+        font-size: 24px;
+    }
     .about-info {
         font-size: 24px;
     }
@@ -738,6 +811,12 @@ footer {
     .about-title h1 {
         font-size: 135px;
     }
+    .mid1 {
+        padding-left: 70px;
+    }
+    .mid2 {
+        padding-left: 50px;
+    }
 }
 
 @media only screen and (max-width:1196px) {
@@ -748,6 +827,12 @@ footer {
         font-size: 22px;
     }
     #io-residents {
+        font-size: 22px;
+    }
+    #terminal {
+        font-size: 22px;
+    }
+    #minors {
         font-size: 22px;
     }
     .about-info {
@@ -798,6 +883,12 @@ footer {
     .about-info {
         font-size: 21px;
     }
+    #terminal {
+        font-size: 21px;
+    }
+    #minors {
+        font-size: 21px;
+    }
     .nav a {
         padding-left: 1.6%;
     }
@@ -833,6 +924,12 @@ footer {
 
 @media only screen and (max-width: 1084px) {
     .nav {
+        font-size: 20px;
+    }
+    #terminal {
+        font-size: 20px;
+    }
+    #minors {
         font-size: 20px;
     }
     .about-info {
@@ -894,6 +991,12 @@ footer {
     #io-residents h2 {
         font-size: 32px;
     }
+    #terminal h2 {
+        font-size: 32px;
+    }
+    #minors h2 {
+        font-size: 32px;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -929,10 +1032,16 @@ footer {
     }
 }
 
-@media only screen and (max-width: 902px) {
+@media only screen and (max-width: 903px) {
     .logo img {
-        width: 350px;
+        width: 349px;
     }
+}
+
+@media only screen and (max-width: 902px) {
+    /* .logo img {
+        width: 349px;
+    } */
     .nav {
         display: none;
     }
@@ -948,7 +1057,7 @@ footer {
         width: 500px;
         background-color: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(12px);
-        padding: 400px 50px 206px;
+        padding: 320px 50px 286px;
     }
     body {
         text-align: center;
@@ -1086,12 +1195,27 @@ footer {
     .list-ill1 ul {
         margin: 0;
     }
+    .mid1 {
+        padding-left: 60px;
+    }
+    .mid2 {
+        padding-left: 40px;
+    }
 }
 
 @media only screen and (max-width: 710px) {
     .title {
         right: 10%;
         width: 80%;
+        padding-top: 345px;
+        padding-bottom: 325px;
+    }
+}
+
+@media only screen and (max-width: 633px) {
+    .title {
+        padding-top: 322px;
+        padding-bottom: 285px;
     }
 }
 
@@ -1140,11 +1264,15 @@ footer {
     }
     #il-residents {
         font-size: 18px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     #il-residents h2 {
         font-size: 28px;
     }
     #io-residents {
+        padding-left: 30px;
+        padding-right: 30px;
         font-size: 18px;
     }
     #io-residents h2 {
@@ -1153,6 +1281,32 @@ footer {
     .list-ill1 {
         grid-template-columns: 1fr;
         text-align: left;
+    }
+    #terminal {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 18px;
+    }
+    #terminal h2 {
+        font-size: 28px;
+    }
+    .term {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .term p {
+        width: 100%;
+    }
+    #minors {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 18px;
+    }
+    #minors h2 {
+        font-size: 28px;
+    }
+    .mid1 {
+        padding-left: 40px;
     }
 }
 
@@ -1176,6 +1330,13 @@ footer {
     /* about page css */
     .about-title h1 {
         font-size: 110px;
+    }
+}
+
+@media only screen and (max-width: 363px) {
+    .title {
+        padding-top: 330px;
+        padding-bottom: 309px;
     }
 }
 
