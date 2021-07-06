@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    transition: all ease-out 200ms;
 }
 
 body {
@@ -229,6 +230,17 @@ span {
     box-sizing: border-box;
 }
 
+.middle2 {
+    margin-top: 50px;
+    background-color: #D9DCEC;
+    padding: 80px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
 .qualify {
     background-color: rgb(240, 240, 240);
     padding: 50px 20px;
@@ -236,6 +248,12 @@ span {
 }
 
 .aboutB {
+    background-color: rgb(240, 240, 240);
+    padding: 50px 20px;
+    text-decoration: none;
+}
+
+.aboutB2 {
     background-color: rgb(240, 240, 240);
     padding: 50px 20px;
     text-decoration: none;
@@ -269,6 +287,14 @@ span {
     top: 15px;
 }
 
+.aboutB2 p {
+    color: black;
+    font-family: "Noto sans", sans-serif;
+    font-size: 18px;
+    position: relative;
+    top: 58px;
+}
+
 .servicesB p {
     color: black;
     font-family: "Noto sans", sans-serif;
@@ -297,6 +323,13 @@ span {
     border-top: rgba(128, 128, 128, 0.753) solid 2px;
     position: relative;
     top: 15px;
+}
+
+.aboutB2 hr {
+    color: rgba(128, 128, 128, 0.753);
+    border-top: rgba(128, 128, 128, 0.753) solid 2px;
+    position: relative;
+    top: 58px;
 }
 
 .servicesB hr {
@@ -436,6 +469,64 @@ footer {
     font-weight: 500;
     text-transform: uppercase;
     font-size: 60px;
+}
+
+
+/* Services page css here */
+
+.services-title p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#il-residents {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#il-residents h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #181b30;
+}
+
+.list-ill {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#io-residents {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#io-residents h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #181b30;
+}
+
+.list-ill1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 @media only screen and (min-width: 1920px) {
@@ -595,6 +686,12 @@ footer {
         font-size: 24px;
         padding-top: 15px;
     }
+    #il-residents {
+        font-size: 24px;
+    }
+    #io-residents {
+        font-size: 24px;
+    }
     .about-info {
         font-size: 24px;
     }
@@ -647,6 +744,12 @@ footer {
     .nav {
         font-size: 22px;
     }
+    #il-residents {
+        font-size: 22px;
+    }
+    #io-residents {
+        font-size: 22px;
+    }
     .about-info {
         font-size: 22px;
     }
@@ -686,6 +789,12 @@ footer {
     .nav {
         font-size: 21px;
     }
+    #il-residents {
+        font-size: 21px;
+    }
+    #io-residents {
+        font-size: 21px;
+    }
     .about-info {
         font-size: 21px;
     }
@@ -698,6 +807,9 @@ footer {
     .aboutB {
         padding: 30px 15px;
     }
+    .aboutB2 {
+        padding: 30px 15px;
+    }
     .servicesB {
         padding: 30px 15px;
     }
@@ -705,6 +817,10 @@ footer {
         padding: 30px 30px;
     }
     .middle {
+        grid-gap: 50px;
+        padding: 50px;
+    }
+    .middle2 {
         grid-gap: 50px;
         padding: 50px;
     }
@@ -765,6 +881,18 @@ footer {
         font-size: 115px;
         padding-top: 50px;
         padding-left: 30px;
+    }
+    #il-residents {
+        font-size: 20px;
+    }
+    #il-residents h2 {
+        font-size: 32px;
+    }
+    #io-residents {
+        font-size: 20px;
+    }
+    #io-residents h2 {
+        font-size: 32px;
     }
 }
 
@@ -858,6 +986,9 @@ footer {
     .middle {
         grid-template-columns: 1fr 1fr;
     }
+    .middle2 {
+        grid-template-columns: 1fr 1fr;
+    }
     .hideMob {
         display: none;
     }
@@ -939,6 +1070,22 @@ footer {
         padding-left: 0;
         margin-left: 0;
     }
+    .list-ill {
+        margin-top: 40px;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+    .list-ill ul {
+        margin: 0;
+    }
+    .list-ill1 {
+        margin-top: 40px;
+        /* grid-template-columns: 1fr 1fr; */
+        text-align: left;
+    }
+    .list-ill1 ul {
+        margin: 0;
+    }
 }
 
 @media only screen and (max-width: 710px) {
@@ -959,6 +1106,9 @@ footer {
         grid-template-columns: 1fr;
         margin-top: 250px;
     }
+    .middle2 {
+        grid-template-columns: 1fr;
+    }
     .maps {
         width: 90%;
     }
@@ -977,6 +1127,32 @@ footer {
     }
     .about-info p {
         font-size: 26px;
+    }
+    .aboutB2 p {
+        top: 45px;
+    }
+    .aboutB2 hr {
+        top: 45px;
+    }
+    .list-ill {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+    #il-residents {
+        font-size: 18px;
+    }
+    #il-residents h2 {
+        font-size: 28px;
+    }
+    #io-residents {
+        font-size: 18px;
+    }
+    #io-residents h2 {
+        font-size: 28px;
+    }
+    .list-ill1 {
+        grid-template-columns: 1fr;
+        text-align: left;
     }
 }
 
