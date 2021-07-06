@@ -399,6 +399,45 @@ footer {
     font-size: 18px;
 }
 
+
+/* About Us page css here */
+
+.about-title {
+    display: grid;
+    grid-template-columns: 7fr 8fr;
+}
+
+.about-title img {
+    width: 100%;
+}
+
+.about-title h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 180px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0 0 0 70px;
+    padding-top: 100px;
+    padding-left: 40px;
+    line-height: 1.4;
+}
+
+.about-info {
+    width: 80%;
+    margin: 80px auto;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.about-info h2 {
+    text-align: center;
+    color: #5061a8;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
 @media only screen and (min-width: 1920px) {
     .nav {
         font-size: 26px;
@@ -412,6 +451,17 @@ footer {
     html {
         background-color: rgba(128, 128, 128, 0.753);
     }
+    /* about page css*/
+    /* .about-title h1 {
+        font-size: 200px;
+    } */
+}
+
+@media only screen and (min-width: 1700px) {
+    /* about page css*/
+    .about-title h1 {
+        font-size: 200px;
+    }
 }
 
 @media only screen and (max-width: 1584px) {
@@ -420,6 +470,10 @@ footer {
     }
     .middle {
         margin-top: 120px;
+    }
+    /* about page css*/
+    .about-title h1 {
+        font-size: 170px;
     }
 }
 
@@ -455,6 +509,10 @@ footer {
     }
     .dr figcaption {
         padding-left: 150px;
+    }
+    /* about page css*/
+    .about-title h1 {
+        font-size: 160px;
     }
 }
 
@@ -516,6 +574,10 @@ footer {
     .dr figcaption {
         padding-left: 110px;
     }
+    /* about page css*/
+    .about-title h1 {
+        font-size: 145px;
+    }
 }
 
 @media only screen and (max-width: 1286px) {
@@ -562,6 +624,10 @@ footer {
     .testi-box {
         height: 370px;
     }
+    /* about page css*/
+    .about-title h1 {
+        font-size: 135px;
+    }
 }
 
 @media only screen and (max-width:1196px) {
@@ -584,11 +650,19 @@ footer {
     .dr figcaption {
         padding-left: 80px;
     }
+    /* about page css*/
+    .about-title h1 {
+        font-size: 125px;
+    }
 }
 
 @media only screen and (max-width: 1156px) {
     .testi-box {
         height: 385px;
+    }
+    /* about page css*/
+    .about-title h1 {
+        font-size: 120px;
     }
 }
 
@@ -614,6 +688,10 @@ footer {
     .middle {
         grid-gap: 50px;
         padding: 50px;
+    }
+    /* about page css*/
+    .about-title h1 {
+        font-size: 120px;
     }
 }
 
@@ -659,6 +737,12 @@ footer {
         padding-left: 30px;
         top: 100px;
     }
+    /* about page css*/
+    .about-title h1 {
+        font-size: 115px;
+        padding-top: 60px;
+        padding-left: 30px;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -685,6 +769,12 @@ footer {
     }
     .contact-body {
         margin: auto;
+    }
+    /* about page css*/
+    .about-title h1 {
+        font-size: 110px;
+        padding-top: 40px;
+        padding-left: 20px;
     }
 }
 
@@ -789,7 +879,7 @@ footer {
     /* Style the hamburger menu */
     .topnav a.icon {
         background-color: white;
-        color: black;
+        color: #5061a8;
         display: flex;
         margin: auto;
         height: 60px;
@@ -814,6 +904,17 @@ footer {
         padding-left: 0;
         text-align: center;
         margin: auto;
+    }
+    /* about page css */
+    .about-title {
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+    .about-title h1 {
+        text-align: center;
+        font-size: 150px;
+        padding-left: 0;
+        margin-left: 0;
     }
 }
 
@@ -847,6 +948,13 @@ footer {
     .logo img {
         width: 320px;
     }
+    /* about page css */
+    .about-title h1 {
+        font-size: 130px;
+    }
+    .about-info p {
+        font-size: 26px;
+    }
 }
 
 @media only screen and (max-width: 415px) {
@@ -865,6 +973,10 @@ footer {
         font-size: 22px;
         font-weight: 400;
         margin: auto;
+    }
+    /* about page css */
+    .about-title h1 {
+        font-size: 110px;
     }
 }
 
