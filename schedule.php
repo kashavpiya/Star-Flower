@@ -1,10 +1,10 @@
 <?php 
 if(isset($_POST['submit'])){
-    $to = "email@example.com"; // this is your Email address
+    $to = "StarFlowerWellness@gmail.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
-    $subject = "Form submission";
+    $subject = "Schedule Form submission";
     $subject2 = "Copy of your form submission";
     $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
     $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
     echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
+   
     }
 ?>
 
@@ -30,6 +30,16 @@ if(isset($_POST['submit'])){
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Noto+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 </head>
 
 <body>
@@ -47,7 +57,7 @@ if(isset($_POST['submit'])){
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="services.html">Services</a>
-                <a href="schedule.html" style="color: #5061a8;">Schedule</a>
+                <a href="schedule.php" style="color: #5061a8;">Schedule</a>
                 <a href="#contact">Contact Us</a>
                 <a href="#FAQ">FAQ</a>
             </div>
@@ -65,7 +75,7 @@ if(isset($_POST['submit'])){
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
                 <a href="services.html">Services</a>
-                <a href="schedule.html" style="color: #5061a8;">Schedule</a>
+                <a href="schedule.php" style="color: #5061a8;">Schedule</a>
                 <a href="#contact">Contact Us</a>
                 <a href="#FAQ">FAQ</a>
             </div>
@@ -144,11 +154,11 @@ if(isset($_POST['submit'])){
             </div>
 
             <div class="form-Email">
-                <p></p>
+                <p>Schedule a meeting</p>
                 <form action="" method="post">
-                    First Name<br> <input type="text" name="first_name" style="width: 37%; padding: 12px 20px;margin: 8px 0;box-sizing: border-box;"><br> Last Name<br> <input type="text" name="last_name" style="width: 37%; padding: 12px 20px;margin: 8px 0;box-sizing: border-box;"><br>                    Email <br><input type="text" name="email" style="width: 37%; padding: 12px 20px;margin: 8px 0;box-sizing: border-box;"><br> Message
-                    <br><textarea rows="5" name="message" cols="30" style="width: 37%; padding: 12px 20px;margin: 8px 0;box-sizing: border-box;"></textarea><br>
-                    <input type="submit" name="submit" value="Submit" style="width: 37%; padding: 12px 20px;margin: 8px 0;box-sizing: border-box;">
+                    First Name<br> <input type="text" name="first_name" required><br> Last Name<br> <input type="text" name="last_name" required><br>                    Email <br><input type="text" name="email" required><br> Message
+                    <br><textarea rows="5" name="message" cols="30" required></textarea><br>
+                    <input type="submit" name="submit" value="Submit" >
                 </form>
             </div>
 
@@ -181,7 +191,7 @@ if(isset($_POST['submit'])){
                     <a href="#contact " class="footTitle " style="color: #181b30; text-decoration: none; "><span class="mobOnly ">&gt </span>OUR CLINIC</a><br class="hideMob ">
                     <a href="#contact " class="footContent hideMob " style="color: #181b30; text-decoration: none; ">Star Flower Clinic<br> 1008 4th Street<br> Fulton, Illinois 61252<br> Phone: 815.208.7703</a><br class="hideMob ">
                     <br>
-                    <a href="mailto:StarFlowerWellness@gmail.com " target="_blank " class="footContent hideMob " style="color: #181b30; text-decoration: none; ">Email: StarFlowerWellness@gmail.com</a><br class="hideMob ">
+                    <a href="mailto:StarFlowerWellness@gmail.com" target="_blank " class="footContent hideMob " style="color: #181b30; text-decoration: none; ">Email: StarFlowerWellness@gmail.com</a><br class="hideMob ">
 
 
                 </div>
@@ -211,16 +221,7 @@ if(isset($_POST['submit'])){
 
 </body>
 
-<script>
-    function myFunction() {
-        var x = document.getElementById("myLinks ");
-        if (x.style.display === "block ") {
-            x.style.display = "none ";
-        } else {
-            x.style.display = "block ";
-        }
-    }
-</script>
+
 
 
 </html>
