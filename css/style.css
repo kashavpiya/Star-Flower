@@ -76,7 +76,7 @@ main {
 video {
     object-fit: cover;
     width: 100%;
-    height: 800px;
+    height: 600px;
     /* position: fixed; */
     top: 0;
     left: 0;
@@ -91,7 +91,7 @@ video {
 } */
 
 .title {
-    padding: 345px 50px 325px;
+    padding: 250px 50px 218px;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(12px);
     position: absolute;
@@ -101,6 +101,7 @@ video {
     font-family: "Josefin Sans", sans-serif;
     font-size: 64px;
     font-weight: 500;
+    margin-top: 33px;
 }
 
 .content {
@@ -255,30 +256,40 @@ span {
     background-color: rgb(240, 240, 240);
     padding: 50px 20px;
     text-decoration: none;
+    box-shadow: 0 0 4px grey;
+    border-radius: 20px;
 }
 
 .aboutB {
     background-color: rgb(240, 240, 240);
     padding: 50px 20px;
     text-decoration: none;
+    box-shadow: 0 0 4px grey;
+    border-radius: 20px;
 }
 
 .aboutB2 {
     background-color: rgb(240, 240, 240);
     padding: 50px 20px;
     text-decoration: none;
+    box-shadow: 0 0 4px grey;
+    border-radius: 20px;
 }
 
 .servicesB {
     background-color: rgb(240, 240, 240);
     padding: 50px 20px;
     text-decoration: none;
+    box-shadow: 0 0 4px grey;
+    border-radius: 20px;
 }
 
 .findUs {
     background-color: rgb(240, 240, 240);
     padding: 50px 20px;
     text-decoration: none;
+    box-shadow: 0 0 4px grey;
+    border-radius: 20px;
 }
 
 .qualify p {
@@ -456,18 +467,19 @@ footer {
 
 .about-title h1 {
     font-family: "Josefin Sans", sans-serif;
-    font-size: 160px;
+    font-size: 64px;
     font-weight: 700;
     text-align: left;
     margin: 0 0 0 70px;
-    padding-top: 70px;
-    padding-left: 40px;
+    padding-top: 200px;
+    padding-left: 80px;
     line-height: 1.35;
+    color: #5061a8;
 }
 
 .about-info {
     width: 80%;
-    margin: 80px auto;
+    margin: 120px auto;
     font-family: "Noto Sans", sans-serif;
     font-size: 30px;
     font-weight: 400;
@@ -771,9 +783,9 @@ textarea {
 
 @media only screen and (min-width: 1700px) {
     /* about page css*/
-    .about-title h1 {
-        font-size: 180px;
-    }
+    /* .about-title h1 {
+        font-size: 58px;
+    } */
 }
 
 @media only screen and (max-width: 1584px) {
@@ -784,9 +796,9 @@ textarea {
         margin-top: 120px;
     }
     /* about page css*/
-    .about-title h1 {
+    /* .about-title h1 {
         font-size: 160px;
-    }
+    } */
     .mid1 {
         padding-left: 100px;
     }
@@ -833,7 +845,7 @@ textarea {
     }
     /* about page css*/
     .about-title h1 {
-        font-size: 160px;
+        padding-top: 170px;
     }
     /* schedule page css goes here */
     .tab1,
@@ -902,9 +914,9 @@ textarea {
         padding-left: 110px;
     }
     /* about page css*/
-    .about-title h1 {
+    /* .about-title h1 {
         font-size: 145px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 1286px) {
@@ -980,7 +992,8 @@ textarea {
     }
     /* about page css*/
     .about-title h1 {
-        font-size: 135px;
+        padding-top: 140px;
+        padding-left: 70px;
     }
     .mid1 {
         padding-left: 70px;
@@ -1038,9 +1051,9 @@ textarea {
         padding-left: 80px;
     }
     /* about page css*/
-    .about-title h1 {
+    /* .about-title h1 {
         font-size: 125px;
-    }
+    } */
     /* schedule page css goes here */
     .tab1,
     .tab2,
@@ -1055,7 +1068,8 @@ textarea {
     }
     /* about page css*/
     .about-title h1 {
-        font-size: 120px;
+        padding-top: 120px;
+        padding-left: 60px;
     }
 }
 
@@ -1117,15 +1131,19 @@ textarea {
         padding: 50px;
     }
     /* about page css*/
-    .about-title h1 {
+    /* .about-title h1 {
         font-size: 120px;
         padding-top: 60px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 1084px) {
     .nav {
         font-size: 20px;
+    }
+    .about-title h1 {
+        padding-top: 105px;
+        padding-left: 40px;
     }
     .tab1 {
         font-size: 20px;
@@ -1187,11 +1205,11 @@ textarea {
         top: 100px;
     }
     /* about page css*/
-    .about-title h1 {
+    /* .about-title h1 {
         font-size: 115px;
         padding-top: 50px;
         padding-left: 30px;
-    }
+    } */
     #il-residents {
         font-size: 20px;
     }
@@ -1238,11 +1256,11 @@ textarea {
         margin: auto;
     }
     /* about page css*/
-    .about-title h1 {
+    /* .about-title h1 {
         font-size: 110px;
         padding-top: 40px;
         padding-left: 20px;
-    }
+    } */
     /* schedule page css goes here */
     .tab1,
     .tab2,
@@ -1255,11 +1273,18 @@ textarea {
     textarea {
         width: 50%;
     }
+    .about-title h1 {
+        padding-top: 105px;
+        padding-left: 20px;
+    }
 }
 
 @media only screen and (max-width: 903px) {
     .logo img {
         width: 349px;
+    }
+    .about-title h1 {
+        padding-top: 0px;
     }
     .nav {
         display: none;
@@ -1276,7 +1301,7 @@ textarea {
         width: 500px;
         background-color: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(12px);
-        padding: 320px 50px 286px;
+        padding: 230px 50px 175px;
     }
     body {
         text-align: center;
@@ -1394,9 +1419,12 @@ textarea {
     }
     .about-title h1 {
         text-align: center;
-        font-size: 150px;
+        font-size: 58px;
         padding-left: 0;
         margin-left: 0;
+    }
+    .about-info {
+        margin-top: 80px;
     }
     .list-ill {
         margin-top: 40px;
@@ -1433,8 +1461,7 @@ textarea {
     .title {
         right: 10%;
         width: 80%;
-        padding-top: 345px;
-        padding-bottom: 325px;
+        padding: 260px 50px 208px;
     }
     /* schedule page css goes here */
     .tab1,
@@ -1457,8 +1484,7 @@ textarea {
 
 @media only screen and (max-width: 633px) {
     .title {
-        padding-top: 322px;
-        padding-bottom: 285px;
+        padding: 230px 50px 175px;
     }
 }
 
@@ -1466,7 +1492,7 @@ textarea {
     .title {
         right: 0;
         width: 100%;
-        padding: 380px 10px 316px;
+        padding: 270px 50px 218px;
         font-size: 54px;
     }
     .middle {
@@ -1489,9 +1515,9 @@ textarea {
         width: 320px;
     }
     /* about page css */
-    .about-title h1 {
+    /* .about-title h1 {
         font-size: 130px;
-    }
+    } */
     .about-info p {
         font-size: 26px;
     }
@@ -1571,6 +1597,12 @@ textarea {
     }
 }
 
+@media only screen and (max-width: 443px) {
+    video {
+        height: 653px;
+    }
+}
+
 @media only screen and (max-width: 415px) {
     .middle {
         margin-top: 340px;
@@ -1589,15 +1621,14 @@ textarea {
         margin: auto;
     }
     /* about page css */
-    .about-title h1 {
+    /* .about-title h1 {
         font-size: 110px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 363px) {
-    .title {
-        padding-top: 330px;
-        padding-bottom: 309px;
+    .about-title h1 {
+        font-size: 50px;
     }
 }
 
